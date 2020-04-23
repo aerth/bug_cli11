@@ -1,0 +1,11 @@
+os: linux
+language: c++
+
+script:
+  - make
+  - file myprog
+  - file myprog-static
+  - ./myprog
+  - ./myprog -h
+  - ./myprog-static
+  - ./myprog-static -h
